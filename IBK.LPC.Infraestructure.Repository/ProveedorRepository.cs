@@ -1,10 +1,15 @@
 ﻿using Dapper;
-using IBK.LPC.Application.Dto.Proveedor;
 using IBK.LPC.Domain.Proveedor;
 using IBK.LPC.Infraestructure.Interface;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using System.Data;
+using System.Reflection;
+using Interbank.Productos.Comercial.Transversal.Interfaces.Models;
+using IBK.LPC.Infraestructure.CrossCutting.Models;
+using Newtonsoft.Json;
+using Interbank.Productos.Comercial.Transversal.Interfaces;
+using Interbank.Productos.Comercial.Transversal;
 
 namespace IBK.LPC.Infraestructure.Repository
 {
@@ -12,29 +17,49 @@ namespace IBK.LPC.Infraestructure.Repository
     {
 
         private readonly string _connectionString;
+        private readonly string TAG;
+        private readonly IAmbiente _ambiente;
 
-        public ProveedorRepository(IConfiguration configuration)
+        public ProveedorRepository(IConfiguration configuration, IAmbiente ambiente)
         {
             _connectionString = configuration.GetConnectionString("DefaultConnection")!;
+            TAG = nameof(ProveedorRepository);
+            _ambiente = ambiente;
         }
 
 
         // VB6: GetData
         public async Task<IEnumerable<Proveedor>> GetDataAsync(string codInstitucion)
         {
-            using var conn = new SqlConnection(_connectionString);
-            var parameters = new DynamicParameters();
-            parameters.Add("@Operacion", "C");
-            parameters.Add("@OtroParam", ""); // si tu SP lo necesita
-            parameters.Add("@CodInstitucion", codInstitucion);
+            try {
+                using var conn = new SqlConnection(_connectionString);
+                var parameters = new DynamicParameters();
+                parameters.Add("@Operacion", "C");
+                parameters.Add("@OtroParam", ""); // si tu SP lo necesita
+                parameters.Add("@CodInstitucion", codInstitucion);
 
-            var result = await conn.QueryAsync<Proveedor>(
-                "UP_Proveedor_SEL",
-                parameters,
-                commandType: CommandType.StoredProcedure
-            );
+                var result = await conn.QueryAsync<Proveedor>(
+                    "UP_Proveedor_SEL",
+                    parameters,
+                    commandType: CommandType.StoredProcedure
+                );
 
-            return result;
+                return result;
+            }
+            catch (Exception exception)
+            {
+                throw new RepositoryException
+                {
+                    TipoExcepcion = Constante.TipoEvento.ERROR,
+                    FechaRegistro = DateTime.Now,
+                    ExcepcionAnidada = exception,
+                    Parametros = JsonConvert.SerializeObject(codInstitucion),
+                    Funcion = MethodBase.GetCurrentMethod()!.ReflectedType!.Name,
+                    Clase = TAG,
+                    RutaLog = _ambiente.RutaEventos
+                };
+            }
+           
         }
 
         // VB6: Adicionar

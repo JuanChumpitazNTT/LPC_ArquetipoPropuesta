@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="Interbank.Productos.Comercial.Transversal">
+      <HintPath>..\dll\Interbank.Productos.Comercial.Transversal.dll</HintPath>
+    </Reference>
+    <Reference Include="Interbank.Productos.Comercial.Transversal.Interfaces">
+      <HintPath>..\dll\Interbank.Productos.Comercial.Transversal.Interfaces.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

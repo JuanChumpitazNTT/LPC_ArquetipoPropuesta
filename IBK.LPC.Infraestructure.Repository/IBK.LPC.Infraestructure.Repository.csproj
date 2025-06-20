@@ -7,8 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\IBK.LPC.Infraestructure.DataInterface\IBK.LPC.Infraestructure.Interface.csproj" />
     <ProjectReference Include="..\IBK.LPC.Infraestructure.Data\IBK.LPC.Infraestructure.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Interbank.Productos.Comercial.Transversal">
+      <HintPath>..\dll\Interbank.Productos.Comercial.Transversal.dll</HintPath>
+    </Reference>
+    <Reference Include="Interbank.Productos.Comercial.Transversal.Interfaces">
+      <HintPath>..\dll\Interbank.Productos.Comercial.Transversal.Interfaces.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

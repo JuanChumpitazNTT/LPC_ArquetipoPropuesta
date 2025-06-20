@@ -9,33 +9,33 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestructura", "Infraest
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{F8B6C2C3-0BA0-4DDB-8A27-7F3C1817D161}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBK.LPC.Application.Dto", "IBK.LPC.Application.Dto\IBK.LPC.Application.Dto.csproj", "{40A47BFF-F9DA-49D3-8F2A-53CFA7ECE3E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBK.LPC.Application.Dto", "IBK.LPC.Application.Dto\IBK.LPC.Application.Dto.csproj", "{40A47BFF-F9DA-49D3-8F2A-53CFA7ECE3E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBK.LPC.Application.Main", "IBK.LPC.Application.Main\IBK.LPC.Application.Main.csproj", "{B7DC3854-8EB9-4E90-9CC5-C4F3A6AD0160}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBK.LPC.Application.Main", "IBK.LPC.Application.Main\IBK.LPC.Application.Main.csproj", "{B7DC3854-8EB9-4E90-9CC5-C4F3A6AD0160}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBK.LPC.Application.Interface", "IBK.LPC.Application.Interface\IBK.LPC.Application.Interface.csproj", "{F056BB56-F5C1-4CC4-88D1-4A1A083575C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBK.LPC.Application.Interface", "IBK.LPC.Application.Interface\IBK.LPC.Application.Interface.csproj", "{F056BB56-F5C1-4CC4-88D1-4A1A083575C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBK.LPC.Domain", "IBK.LPC.Domain\IBK.LPC.Domain.csproj", "{E60F5C33-B45A-4243-A888-AC0A865492A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBK.LPC.Domain", "IBK.LPC.Domain\IBK.LPC.Domain.csproj", "{E60F5C33-B45A-4243-A888-AC0A865492A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBK.LPC.Infraestructure.Data", "IBK.LPC.Infraestructure.Data\IBK.LPC.Infraestructure.Data.csproj", "{D2515272-3F9C-45AB-B448-0FB41CC25086}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBK.LPC.Infraestructure.Data", "IBK.LPC.Infraestructure.Data\IBK.LPC.Infraestructure.Data.csproj", "{D2515272-3F9C-45AB-B448-0FB41CC25086}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBK.LPC.Infraestructure.Interface", "IBK.LPC.Infraestructure.DataInterface\IBK.LPC.Infraestructure.Interface.csproj", "{79716031-7460-493B-A622-275479C49512}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBK.LPC.Infraestructure.Interface", "IBK.LPC.Infraestructure.DataInterface\IBK.LPC.Infraestructure.Interface.csproj", "{79716031-7460-493B-A622-275479C49512}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{6E23DB1F-41A7-4103-98DD-D92A50DD164E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBK.LPC.Service", "IBK.LPC.Service\IBK.LPC.Service.csproj", "{0F19704A-3D14-467E-9D31-B4B36D934F93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBK.LPC.Service", "IBK.LPC.Service\IBK.LPC.Service.csproj", "{0F19704A-3D14-467E-9D31-B4B36D934F93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBK.LPC.Infraestructure.Repository", "IBK.LPC.Infraestructure.Repository\IBK.LPC.Infraestructure.Repository.csproj", "{086380B1-9A26-4B2E-B381-0D04012C340B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBK.LPC.Infraestructure.Repository", "IBK.LPC.Infraestructure.Repository\IBK.LPC.Infraestructure.Repository.csproj", "{086380B1-9A26-4B2E-B381-0D04012C340B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBK.LPC.Application.IoC", "IBK.LPC.Application.IoC\IBK.LPC.Application.IoC.csproj", "{9A4F0397-46C1-4F23-ABEF-DD26DFD425C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBK.LPC.Application.IoC", "IBK.LPC.Application.IoC\IBK.LPC.Application.IoC.csproj", "{9A4F0397-46C1-4F23-ABEF-DD26DFD425C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBK.LPC.Application.Security", "IBK.LPC.Application.Security\IBK.LPC.Application.Security.csproj", "{C35022AB-9E8F-46A4-AE98-3BC66E9C1755}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBK.LPC.Application.Security", "IBK.LPC.Application.Security\IBK.LPC.Application.Security.csproj", "{C35022AB-9E8F-46A4-AE98-3BC66E9C1755}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{B864FBBE-36F9-4001-8641-0C1F40875694}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBK.LPC.Application.Main.Test", "IBK.LPC.Application.Main.Test\IBK.LPC.Application.Main.Test.csproj", "{5FB65324-6392-40B5-BF12-46892544BF1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBK.LPC.Infraestructure.CrossCutting", "IBK.LPC.Infraestructure.CrossCutting\IBK.LPC.Infraestructure.CrossCutting.csproj", "{2925DDFD-E7BC-499D-9B55-1B0964A33AE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBK.LPC.Infraestructure.CrossCutting", "IBK.LPC.Infraestructure.CrossCutting\IBK.LPC.Infraestructure.CrossCutting.csproj", "{2925DDFD-E7BC-499D-9B55-1B0964A33AE7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBK.LPC.Application.Main.Test", "IBK.LPC.Application.Main.Test\IBK.LPC.Application.Main.Test.csproj", "{870D4CC2-99D0-4B17-B909-42F19F2C5A73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,14 +83,14 @@ Global
 		{C35022AB-9E8F-46A4-AE98-3BC66E9C1755}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C35022AB-9E8F-46A4-AE98-3BC66E9C1755}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C35022AB-9E8F-46A4-AE98-3BC66E9C1755}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5FB65324-6392-40B5-BF12-46892544BF1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5FB65324-6392-40B5-BF12-46892544BF1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5FB65324-6392-40B5-BF12-46892544BF1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5FB65324-6392-40B5-BF12-46892544BF1B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2925DDFD-E7BC-499D-9B55-1B0964A33AE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2925DDFD-E7BC-499D-9B55-1B0964A33AE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2925DDFD-E7BC-499D-9B55-1B0964A33AE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2925DDFD-E7BC-499D-9B55-1B0964A33AE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{870D4CC2-99D0-4B17-B909-42F19F2C5A73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{870D4CC2-99D0-4B17-B909-42F19F2C5A73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{870D4CC2-99D0-4B17-B909-42F19F2C5A73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{870D4CC2-99D0-4B17-B909-42F19F2C5A73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -106,8 +106,8 @@ Global
 		{086380B1-9A26-4B2E-B381-0D04012C340B} = {42517F5A-06B3-4A8C-8A28-4A969BF2043B}
 		{9A4F0397-46C1-4F23-ABEF-DD26DFD425C5} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{C35022AB-9E8F-46A4-AE98-3BC66E9C1755} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{5FB65324-6392-40B5-BF12-46892544BF1B} = {B864FBBE-36F9-4001-8641-0C1F40875694}
 		{2925DDFD-E7BC-499D-9B55-1B0964A33AE7} = {42517F5A-06B3-4A8C-8A28-4A969BF2043B}
+		{870D4CC2-99D0-4B17-B909-42F19F2C5A73} = {B864FBBE-36F9-4001-8641-0C1F40875694}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AF8D81D2-E618-409C-BEEA-2A1AEE4D7018}

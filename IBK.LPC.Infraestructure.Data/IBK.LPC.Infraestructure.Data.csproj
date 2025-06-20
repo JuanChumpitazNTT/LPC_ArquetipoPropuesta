@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\IBK.LPC.Domain\IBK.LPC.Domain.csproj" />
+    <ProjectReference Include="..\IBK.LPC.Infraestructure.CrossCutting\IBK.LPC.Infraestructure.CrossCutting.csproj" />
     <ProjectReference Include="..\IBK.LPC.Infraestructure.DataInterface\IBK.LPC.Infraestructure.Interface.csproj" />
   </ItemGroup>
 
