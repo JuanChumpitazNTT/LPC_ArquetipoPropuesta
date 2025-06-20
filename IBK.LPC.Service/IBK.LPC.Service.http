@@ -1,0 +1,6 @@
+@IBK.LPC.Service_HostAddress = http://localhost:5200
+
+GET {{IBK.LPC.Service_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

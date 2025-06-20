@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IBK.LPC.Application.Interface\IBK.LPC.Application.Interface.csproj" />
+    <ProjectReference Include="..\IBK.LPC.Application.Main\IBK.LPC.Application.Main.csproj" />
+    <ProjectReference Include="..\IBK.LPC.Infraestructure.Repository\IBK.LPC.Infraestructure.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
